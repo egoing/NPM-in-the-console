@@ -11,5 +11,5 @@ NPM in the console makes the npm package available in the browser's developer to
 
 ## Compile method
 1. Run the command below. (nodejs must be installed)
-npx bookmarklet src/index.js dist/index.js
+```npx bookmarklet src/index.js dist/index.js```
 2. Use the bookmarklet file in dist/index.js.
