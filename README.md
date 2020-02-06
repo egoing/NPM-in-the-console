@@ -3,7 +3,7 @@ NPM in the console makes the npm package available in the browser's developer to
 
 ## How to use
 
-1. Register the following code as a bookmark.
+1. Register the contents of the /dist/index.bookmarklets file as the address of the bookmark.
 2. Launch the console.
 3. Click Bookmarks in NPM in the console.
 4. Enter the desired NPM package.

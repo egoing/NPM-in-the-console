@@ -8,18 +8,18 @@ function getCookie(name) {
     var value = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
     return value ? value[2] : null;
 }
-var styles = [
+window.styles = [
     'background-color:black',
     'color:#39ff14',
     'padding:5px',
     'width:100%',
     'display:block',
-    'margin:10px'
+    'margin:0'
 ].join(';');
 console.log('%cNPM in the console', 'padding:3rem;background-color:black;color:#39ff14;width:100%');
 var afterLoaderModuleNames = getCookie('n');
+var afterLoaderModuleNames = afterLoaderModuleNames === 'null' ? '' : afterLoaderModuleNames;
 var module_name = prompt('module name? (e.g. lodash,jquery)', afterLoaderModuleNames ? afterLoaderModuleNames : '');
-var module_name = module_name === 'null' ? '' : module_name;
 setCookie('n', module_name);
 var modules = module_name.split(',');
 for (var i = 0; i < modules.length; i++) {
